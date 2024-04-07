@@ -1,0 +1,124 @@
+footer {
+    background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+    color: #fff; /* Text color */
+    padding: 40px;
+    border-top-left-radius: 20px; /* Rounded corners for top left */
+    border-top-right-radius: 20px; /* Rounded corners for top right */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center;
+    position: relative; /* Position for pseudo-elements */
+}
+.footer-content {
+    max-width: 600px;
+    text-align: center; /* Center align text */
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+}
+.footer-content p {
+    margin-bottom: 15px;
+}
+/* Add some decorative elements */
+footer::before,
+footer::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+footer::before {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer::after {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Hover effect */
+footer:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Darken the background color on hover */
+}
+.footer-content:hover {
+    color: rgb(110, 59, 59); /* Change text color on hover */
+}
+footer:hover::before,
+footer:hover::after {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighten the decorative elements on hover */
+} nav {
+    padding: 2rem;
+    background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+    border-radius: 1rem;
+    margin-top: 1rem; /* Adjust margin-top to align properly */
+    margin-bottom: 1rem; /* Adjust margin-bottom to cover the navigation bar properly */
+}
+nav {
+    padding: 2rem;
+    background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+    border-radius: 1rem;
+    margin-top: 1rem; /* Adjust margin-top to align properly */
+    margin-bottom: 1rem; /* Adjust margin-bottom to cover the navigation bar properly */
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    width: 96%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    color: white;
+    margin-left: 1rem; /* Add a gap between list items */
+}
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+}
+/* Adjusting the spacing between nav items */
+nav a:not(:last-child) {
+    margin-right: 1rem;
+}
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 100px; /* Set width of the logo */
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: 90%;
+}
+nav a:hover {
+    color: rgb(86, 98, 112); /* Change text color on hover */
+    background-color: #FF5733; /* Change background color to a contrasting color on hover */
+    border-radius: 50px;
+}
+
+#credits{
+
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: 1px;
+}
+#credits:hover{
+    cursor: pointer;
+    background-color: #FF5733
+}
+.camp{
+    border: #FF5733 1px solid;
+    width: 30%;
+    margin: 10px;
+    border-radius: 30%;
+    text-align: center;
+
+}

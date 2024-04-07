@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Frontend Mentor Design Challenge">
+    
+
+    <title>BLOMO</title>
+    
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-REPLACED_WITH_ACTUAL_HASH" crossorigin="anonymous" /> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Adamina|Poppins|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="camps.css">
+    
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-REPLACED_WITH_ACTUAL_HASH" crossorigin="anonymous" /> -->
+</head>
+
+<body>
+    <img src="imageedit_1_8141653015.png" class="logo">
+    
+
+    <nav>
+        <ul>
+            <a href=""><li>Contact Us</li></a>
+            <a href=""><li>About Us</li></a>
+            <a href=""><li>Sign in</li></a>
+            <a href=""><li>Blogs</li></a>
+        </ul>
+    </nav>
+  <div class="container">
+    <div class="background-image"></div>
+    <form id="CampForm">
+      <h2>Blood Camp Registration Form</h2>
+      <div class="form-group">
+        <label for="hospital">Hospital Name:</label>
+        <input type="text" id="hospital" name="hospital" required>
+      </div>
+      <div class="form-group">
+        <label for="date-time">Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="date-time" required>
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+      </div>
+      <div class="form-group">
+        <label for="contact-info">Contact Info:</label>
+        <input type="text" id="contactinfo" name="contact-info" required>
+      </div>
+      <div class="Description">
+        <label for="Description">Description:</label>
+        <input type="text" id="Description" required>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  <div class="alert" style="display: none;">Form submitted!</div>
+  <footer>
+    <div class="footer-content">
+      <p>Contact Info: info@blooddonation.org</p>
+      <p>Our organization is dedicated to promoting blood donation and saving lives.</p>
+    </div>
+  </footer>
+  <script type="module" src="camph.js"></script>
+</body>
+</html>

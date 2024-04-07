@@ -1,0 +1,334 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background: linear-gradient(to right, #c56363, #912828);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #eabe0b;
+} */
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    font-family: 'Poppins', sans-serif;
+    color: rgb(86,98,112);
+    height: 100vh;
+    overflow: hidden;
+    /* background-image: linear-gradient(165deg, rgba(255,255,255,0.03), rgba(184,201,229,0.25)), url('blood-donor-illustration\ \(1\).png'); */
+    background-repeat: no-repeat;
+    background-position: 90% 75%;
+}
+
+
+nav {
+    padding: 2rem;
+}
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    color: rgb(86,98,112);
+}
+
+nav a {
+     margin: 0 0 .25rem 3rem;
+}
+
+/* nav a:hover,
+nav a:active {
+    border-bottom: 1px solid red;
+} */
+nav a:hover,
+nav a:active {
+    border-bottom: 1px solid red;
+    transform: scale(1.1); /* Increase size by 10% on hover */
+    transition: transform 0.3s ease;
+     /* Smooth transition */
+
+}
+
+.container {
+    flex: 1; /* Expand container to fill remaining vertical space */
+    max-width: 400px;
+    margin: 120px auto 50px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+textarea {
+    height: 100px;
+}
+
+.radio-buttons label {
+    margin-right: 20px;
+}
+
+button {
+    padding: 12px 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #800000;
+}
+
+/* footer {
+    background: linear-gradient(to right, #c56363, #912828);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+} */
+
+nav {
+    padding: 2rem;
+    background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+    border-radius: 1rem;
+    margin-top: 1rem; /* Adjust margin-top to align properly */
+    margin-bottom: 1rem; /* Adjust margin-bottom to cover the navigation bar properly */
+}
+nav {
+    padding: 2rem;
+    background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+    border-radius: 1rem;
+    margin-top: 1rem; /* Adjust margin-top to align properly */
+    margin-bottom: 1rem; /* Adjust margin-bottom to cover the navigation bar properly */
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Center items vertically */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    color: white;
+    margin-left: 1rem; /* Add a gap between list items */
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+}
+
+/* Adjusting the spacing between nav items */
+nav a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 100px; /* Set width of the logo */
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: 90%;
+}
+nav a:hover {
+    color: rgb(86, 98, 112); /* Change text color on hover */
+    background-color: #FF5733; /* Change background color to a contrasting color on hover */
+    border-radius: 50px;
+}
+
+.moving-image {
+    position: absolute;
+    top: 50%;
+    right: 0; /* Align to the right side */
+    transform: translateY(-50%);
+    transition: transform 0.5s ease; /* Apply transition */
+}
+
+.moving-image:hover {
+    transform: translateY(calc(-50% - 5px)) translateX(5px); /* Move the image 5px to the right */
+}
+.logo {
+    transition: transform 0.3s ease; /* Add transition for smoother scaling */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Increase size by 10% on hover */
+}
+/* Styles for the footer */
+/* Styles for the footer */
+/* Styles for the footer */
+footer {
+    background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+    color: #fff; /* Text color */
+    padding: 40px;
+    border-top-left-radius: 20px; /* Rounded corners for top left */
+    border-top-right-radius: 20px; /* Rounded corners for top right */
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center;
+    position: relative; /* Position for pseudo-elements */
+}
+
+.footer-content {
+    max-width: 600px;
+    text-align: center; /* Center align text */
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+}
+
+.footer-content p {
+    margin-bottom: 15px;
+}
+
+/* Add some decorative elements */
+footer::before,
+footer::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+footer::before {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer::after {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Hover effect */
+footer:hover {
+    background-color: rgba(255, 0, 0, 0.7); /* Darken the background color on hover */
+}
+
+.footer-content:hover {
+    color: rgb(110, 59, 59); /* Change text color on hover */
+}
+
+footer:hover::before,
+footer:hover::after {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighten the decorative elements on hover */
+}
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    font-family: 'Poppins', sans-serif;
+    color: rgb(86, 98, 112);
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    overflow-y: auto; /* Allow vertical scrolling */
+    background-repeat: no-repeat;
+    background-position: 90% 75%;
+}

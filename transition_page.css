@@ -1,0 +1,261 @@
+/* transition_page.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #c56363;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand {
+  font-size: 24px;
+  color: #fff;
+}
+
+.brand-name {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Added transition */
+}
+
+.nav-links li a:hover {
+  color: darkred; /* Changed color on hover */
+}
+
+.container {
+  margin-top: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #c56363;
+  font-size: 28px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.option {
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.join-button {
+  padding: 12px 40px;
+  background-color: #c56363;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 20px;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+p {
+  margin-top: 20px;
+  color: #333;
+  font-size: 16px;
+}
+
+a {
+  color: #c56363;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: darkred;
+}
+
+footer {
+  background-color: #c56363;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.option button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.option button:hover {
+  background-color: #f0f0f0;
+}
+
+.option button.active {
+  background-color: #007bff;
+  color: white;
+}
+footer {
+  background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+  color: #fff; /* Text color */
+  padding: 40px;
+  border-top-left-radius: 20px; /* Rounded corners for top left */
+  border-top-right-radius: 20px; /* Rounded corners for top right */
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center;
+  position: relative; /* Position for pseudo-elements */
+}
+.footer-content {
+  max-width: 600px;
+  text-align: center; /* Center align text */
+  transition: color 0.3s ease; /* Smooth transition for text color change */
+}
+.footer-content p {
+  margin-bottom: 15px;
+}
+/* Add some decorative elements */
+footer::before,
+footer::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+footer::before {
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer::after {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Hover effect */
+footer:hover {
+  background-color: rgba(255, 0, 0, 0.7); /* Darken the background color on hover */
+}
+.footer-content:hover {
+  color: rgb(110, 59, 59); /* Change text color on hover */
+}
+footer:hover::before,
+footer:hover::after {
+  background-color: rgba(255, 255, 255, 0.3); /* Lighten the decorative elements on hover */
+} nav {
+  padding: 2rem;
+  background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+  border-radius: 1rem;
+  margin-top: 1rem; /* Adjust margin-top to align properly */
+  margin-bottom: 1rem; /* Adjust margin-bottom to cover the navigation bar properly */
+}
+nav {
+  padding: 2rem;
+  background-color: rgba(255, 0, 0, 0.5); /* Reddish background color */
+  border-radius: 1rem;
+  margin-top: 1rem; /* Adjust margin-top to align properly */
+  margin-bottom: 1rem; /* Adjust margin-bottom to cover the navigation bar properly */
+  display: flex; /* Use flexbox */
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+nav ul {
+  margin-right: 40px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  color: white;
+  margin-left: 1rem; /* Add a gap between list items */
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 1rem;
+}
+/* Adjusting the spacing between nav items */
+nav a:not(:last-child) {
+  margin-right: 1rem;
+}
+.logo {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  width: 100px; /* Set width of the logo */
+  z-index: 1;
+  margin-left: 20px;
+  margin-top: 10px;
+  opacity: 90%;
+}
+nav a:hover {
+  color: rgb(86, 98, 112); /* Change text color on hover */
+  background-color: #FF5733; /* Change background color to a contrasting color on hover */
+  border-radius: 50px;
+}
